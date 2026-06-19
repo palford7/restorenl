@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restore North Lanarkshire</title>
+  <meta name="description" content="Restore Britain North Lanarkshire landing page." />
+  <link rel="preconnect" href="https://upload.wikimedia.org" />
+  <style>
+    :root {
+      --bg: #062242;
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.86);
+      --line: rgba(255,255,255,0.78);
+      --card: rgba(255,255,255,0.06);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    main {
+      width: min(980px, 92vw);
+      padding: 48px 0;
+    }
+
+    .logo {
+      width: min(320px, 70vw);
+      height: auto;
+      margin: 0 auto 42px;
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+      line-height: 1.5;
+      margin: 0 auto 42px;
+      max-width: 760px;
+      color: var(--muted);
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin: 0 auto 54px;
+    }
+
+    .socials a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.15rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 12px 24px;
+      min-width: 148px;
+      background: var(--card);
+      transition: transform 140ms ease, background 140ms ease;
+    }
+
+    .socials a:hover,
+    .socials a:focus-visible {
+      background: rgba(255,255,255,0.13);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .divider {
+      width: 128px;
+      height: 1px;
+      margin: 0 auto 34px;
+      background: var(--line);
+    }
+
+    .footer-title {
+      font-size: clamp(1.35rem, 2.7vw, 2rem);
+      font-weight: 800;
+      margin: 0 0 22px;
+    }
+
+    .location {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.12rem;
+      color: var(--text);
+      margin-bottom: 28px;
+    }
+
+    .pin {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+    }
+
+    .imprint {
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.55;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .imprint a { color: var(--text); }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/9/99/Logo_of_Restore_Britain.png" alt="Restore Britain logo" />
+
+    <h1>Restore North Lanarkshire</h1>
+    <p class="subtitle">Local branch information, updates and volunteer activity for Restore Britain in North Lanarkshire.</p>
+
+    <nav class="socials" aria-label="Social media links">
+      <a href="https://www.facebook.com/profile.php?id=61563680115561" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://x.com/NL_Restore_" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://www.instagram.com/nl_restore" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </nav>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <p class="footer-title">Restore Britain</p>
+    <p class="location">
+      <svg class="pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+      North Lanarkshire, Scotland
+    </p>
+
+    <p class="imprint">
+      Promoted by Restore Britain of Suite 4, Millennium House, Gapton Hall Road, Great Yarmouth, Norfolk, England, NR31 0NL.
+    </p>
+  </main>
+</body>
+</html>
