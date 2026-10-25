@@ -4,128 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restore Britain North Lanarkshire</title>
-
-<style>
-
-:root{
-    --navy:#001f3f;
-    --white:#ffffff;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--navy);
-    color: white;
-    text-align:center;
-}
-
-.header{
-    background:white;
-    color:var(--navy);
-    padding:22px 20px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.2);
-}
-
-.header h1{
-    font-size:clamp(1.8rem,3.6vw,3.15rem);
-    font-weight:700;
-}
-
-.content{
-    max-width:1000px;
-    margin:auto;
-    padding:50px 20px 80px;
-}
-
-.logo{
-    max-width:560px;
-    width:72%;
-    display:block;
-    margin:0 auto 40px;
-}
-
-.socials{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    margin-bottom:60px;
-}
-
-.social-button{
-    display:inline-block;
-    padding:14px 28px;
-    border:2px solid white;
-    border-radius:50px;
-    color:white;
-    text-decoration:none;
-    font-size:1.2rem;
-    transition:0.2s;
-}
-
-.social-button:hover{
-    background:white;
-    color:var(--navy);
-}
-
-.info{
-    font-size:clamp(1.1rem,2vw,1.8rem);
-    line-height:1.8;
-}
-
-.info p{
-    margin-bottom:20px;
-}
-
-.info a{
-    color:white;
-}
-
-.promoted{
-    margin-top:40px;
-    line-height:1.7;
-    color:rgba(255,255,255,0.9);
-    font-size:1.1rem;
-}
-
-.divider{
-    width:120px;
-    height:1px;
-    background:white;
-    opacity:0.5;
-    margin:60px auto;
-}
-
-.footer{
-    font-size:1.3rem;
-}
-
-.location{
-    margin-top:20px;
-    opacity:0.9;
-}
-
-</style>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">
-    <h1>Restore Britain North Lanarkshire</h1>
+<header class="navbar">
+    <div class="navbar-brand">
+        <a href="index.html">
+            <img src="logo-wide.png" class="navbar-logo" alt="Restore Britain">
+            <span class="navbar-title">North Lanarkshire</span>
+        </a>
+    </div>
+    <nav class="navbar-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="https://www.restorebritain.org.uk/policies" class="nav-link" target="_blank">Policies</a>
+        <a href="https://www.restorebritain.org.uk/investigations" class="nav-link" target="_blank">Investigations</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <img src="hero.jpg" alt="The first Northern Lanarkshire Restore Britain gathering">
+    <div class="hero-overlay">
+        <h2>Restore Britain<br>North Lanarkshire</h2>
+    </div>
 </div>
 
 <div class="content">
-
-    <img
-        class="logo"
-        src="https://upload.wikimedia.org/wikipedia/en/9/99/Logo_of_Restore_Britain.png"
-        alt="Restore Britain Logo">
 
     <div class="socials">
 
@@ -152,6 +59,13 @@ body{
     <div class="info">
 
         <p>
+            Branch Enquiries:
+            <a href="mailto:northlanarkshire@restorebritain.org.uk">
+                northlanarkshire@restorebritain.org.uk
+            </a>
+        </p>
+
+        <p>
             General Enquiries:
             <a href="mailto:info@restorebritain.org.uk">
                 info@restorebritain.org.uk
@@ -168,7 +82,7 @@ body{
         <p>
             <a href="https://assets.nationbuilder.com/restorebritain/pages/199/attachments/original/1751203462/Restore_Britain_Privacy_Policy.pdf?1751203462"
                target="_blank">
-                Privacy Policy
+               Privacy Policy
             </a>
         </p>
 
